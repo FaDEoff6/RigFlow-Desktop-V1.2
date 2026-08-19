@@ -1,120 +1,271 @@
 # 📟 RigFlowOS V1.2 — « NERD UPDATE »
 
-**RigFlowOS (RFOS)** est un environnement logiciel expérimental conçu principalement pour **BBC micro:bit**, avec pour objectif de transformer cette petite carte en une véritable mini-plateforme interactive.
+**RigFlowOS (RFOS)** est un environnement logiciel expérimental développé principalement pour **BBC micro:bit V2**.
 
-Malgré les ressources limitées du micro:bit, RFOS exploite son écran LED, ses boutons, ses broches GPIO et ses périphériques externes afin de proposer une expérience proche d'un petit système embarqué.
+Son objectif est de pousser au maximum les capacités d'une petite carte électronique afin d'en faire une véritable mini-plateforme interactive.
 
-La **V1.2 « NERD UPDATE »** marque une étape importante dans le développement du projet avec l'arrivée de **RigFlowOS Desktop**, une version destinée au PC venant compléter l'expérience RFOS sur micro:bit.
+RFOS propose une interface personnalisée, plusieurs scènes, des paramètres et la prise en charge de périphériques externes comme un écran OLED, un joystick ou des boutons.
 
----
+La **V1.2 « NERD UPDATE »** marque également le début du développement de **RigFlowOS Desktop**, la future déclinaison PC de l'écosystème RigFlowOS.
 
-## 🧠 RFOS sur micro:bit
-
-La version micro:bit reste le **cœur historique de RigFlowOS**.
-
-RFOS fonctionne directement sur la carte et permet notamment d'utiliser :
-
-* 📟 Un écran OLED externe pour l'interface
-* 🔘 Les boutons de la micro:bit
-* 🕹️ Des joysticks et contrôleurs externes
-* 🎮 Des matrices de boutons
-* 🔌 Les GPIO pour connecter différents modules
-* 🔊 Des fonctions sonores
-* ⚙️ Un système de paramètres
-* 🚀 Différents modes de fonctionnement
-* 📂 Plusieurs scènes et interfaces
-* 🧩 Des fonctionnalités expérimentales ajoutées progressivement
-
-L'objectif est simple : **faire le maximum avec un minimum de matériel**.
-
-Le micro:bit devient ainsi une petite machine capable d'exécuter son propre environnement logiciel, de communiquer avec des périphériques et d'afficher une interface personnalisée.
+> ⚠️ **Important : RigFlowOS Desktop est actuellement EN COURS DE DÉVELOPPEMENT.**
+>
+> Il ne s'agit pas encore d'une version PC complète et finalisée de RFOS. La version micro:bit reste actuellement la version principale et fonctionnelle du projet.
 
 ---
 
-# 🆕 V1.2 — « NERD UPDATE »
+# 📟 1. RigFlowOS sur micro:bit
 
-La V1.2 introduit une évolution majeure dans l'architecture du projet.
+La version micro:bit constitue actuellement **le cœur de RigFlowOS**.
 
-### 🖥️ RigFlowOS Desktop
+RFOS fonctionne directement sur une **BBC micro:bit V2** et peut utiliser différents périphériques connectés à ses GPIO.
 
-L'ancien concept de **MP** devient désormais une option du système et est renommé :
+### Fonctionnalités actuelles
 
-> **RigFlowOS Desktop**
+Selon la configuration matérielle utilisée, RFOS peut notamment exploiter :
 
-Cette version permet de retrouver l'univers RigFlowOS directement sur PC et sert également de plateforme pour développer des fonctionnalités qui dépasseraient les capacités du micro:bit.
+* 📟 Écran OLED 128×64 I²C
+* 🔘 Boutons externes
+* 🕹️ Joystick
+* 🎮 Matrice de boutons
+* 🔌 GPIO de la micro:bit
+* 🔊 Fonctions sonores
+* ⚙️ Paramètres du système
+* 🚀 Modes de vitesse
+* 📂 Différentes scènes et menus
+* 🧩 Fonctions expérimentales
 
-RFOS dispose donc désormais de deux environnements complémentaires :
-
-**📟 RigFlowOS → micro:bit**
-Le système embarqué, compact et orienté hardware.
-
-**🖥️ RigFlowOS Desktop → PC**
-L'environnement Desktop permettant d'étendre l'écosystème et d'expérimenter avec des fonctionnalités plus avancées.
+L'objectif est de construire une expérience de type **mini-système embarqué**, tout en restant compatible avec les contraintes matérielles du micro:bit.
 
 ---
 
-# 🔧 Prérequis — Version micro:bit
+# 🖥️ 2. RigFlowOS Desktop
 
-### Minimum
+**RigFlowOS Desktop est actuellement en développement.**
 
-Pour utiliser RFOS sur micro:bit, il faut :
+Il s'agit de la future branche PC du projet.
+
+Son objectif est de permettre à l'écosystème RigFlowOS de dépasser les limites du micro:bit et d'expérimenter avec des fonctionnalités qui seraient trop lourdes ou complexes à exécuter sur le matériel embarqué.
+
+### 🚧 État actuel
+
+**Statut : 🟠 EN DÉVELOPPEMENT**
+
+Desktop n'est donc pas encore considéré comme une version stable ou complète de RFOS.
+
+Pour le moment :
+
+* 📟 **RFOS micro:bit** → version principale et fonctionnelle
+* 🖥️ **RigFlowOS Desktop** → branche en développement
+* 🧪 Les fonctionnalités Desktop peuvent encore changer
+* ⚠️ Il ne faut pas considérer Desktop comme un remplacement de la version micro:bit
+
+La V1.2 marque surtout **le lancement officiel de cette branche**.
+
+---
+
+# 🔧 3. Prérequis
+
+## 📟 Pour RigFlowOS micro:bit
+
+### Obligatoire
 
 * **BBC micro:bit V2**
-* Un ordinateur ou appareil permettant de programmer la micro:bit
-* Une connexion USB ou un moyen compatible pour transférer le programme
-* **MakeCode** pour compiler et transférer RFOS
+* Un ordinateur pour programmer la micro:bit
+* Une connexion USB ou Bluetooth compatible
+* **Microsoft MakeCode**
 
-### Configuration recommandée
+### Recommandé
 
-Pour profiter pleinement des fonctionnalités actuelles :
+Pour profiter pleinement de l'interface actuelle :
 
-* 📟 **Écran OLED 128×64 I²C**
-* 🔌 **Shield / breakout GPIO pour micro:bit**
-* 🕹️ Joystick compatible
-* 🔘 Matrice ou boutons externes
+* 📺 **OLED 128×64 I²C**
+* 🔌 Shield / breakout GPIO
+* 🕹️ Joystick
+* 🔘 Boutons ou matrice de boutons
 * 🧵 Câbles jumper
-* 🔋 Une alimentation adaptée lorsque plusieurs périphériques sont utilisés
 
-Les périphériques supplémentaires ne sont pas obligatoires pour démarrer RFOS, mais certaines fonctionnalités de l'interface et certains outils nécessitent du matériel externe.
-
----
-
-# 🖥️ Prérequis — RigFlowOS Desktop
-
-RigFlowOS Desktop nécessite :
-
-* 💻 Un PC compatible
-* 🧠 Un environnement capable d'exécuter la version Desktop
-* 📦 Les fichiers de la version correspondante de RFOS Desktop
-
-La configuration matérielle exacte dépend des fonctionnalités utilisées.
-
-Contrairement à la version micro:bit, **RigFlowOS Desktop n'est pas limité aux ressources extrêmement réduites du microcontrôleur**, ce qui permet d'expérimenter avec des interfaces et des systèmes plus complexes.
+Les périphériques supplémentaires ne sont pas indispensables pour démarrer RFOS, mais certaines fonctionnalités nécessitent du matériel externe.
 
 ---
 
-# 🧪 État du projet
+# 🛠️ 4. Tutoriel : installer RigFlowOS
 
-RFOS est actuellement un **projet expérimental en développement actif**.
+## Étape 1 : préparer la micro:bit
 
-La version micro:bit constitue toujours la partie la plus importante du projet. RigFlowOS Desktop vient désormais compléter cette base et ouvre la porte à un écosystème plus large.
+Prenez votre **BBC micro:bit V2** et connectez-la à votre ordinateur avec un câble USB compatible données.
 
-Certaines fonctionnalités restent expérimentales et peuvent changer au fil des mises à jour.
-
-La **V1.2 « NERD UPDATE »** représente donc moins une simple mise à jour de fonctionnalités qu'une évolution de l'architecture du projet.
+Votre ordinateur doit détecter la micro:bit comme un périphérique.
 
 ---
 
-## 🚀 Objectif de RigFlowOS
+## Étape 2 : ouvrir MakeCode
 
-Le but de RFOS est de montrer qu'un matériel vendu pour quelques dizaines d'euros peut devenir une plateforme étonnamment complète lorsqu'on exploite correctement ses capacités.
+Ouvrez **Microsoft MakeCode** et créez un nouveau projet compatible avec la **micro:bit**.
 
-**Micro:bit + OLED + GPIO + logiciel personnalisé = RigFlowOS.**
+RFOS étant développé avec l'environnement MakeCode, celui-ci permet de compiler le programme et de le transférer vers la carte.
 
-Et maintenant :
+---
 
-**RigFlowOS + PC = RigFlowOS Desktop.**
+## Étape 3 : importer le programme RFOS
 
-Le projet continue d'évoluer avec une philosophie simple :
+Importez le projet ou le code source correspondant à la version de RigFlowOS que vous souhaitez utiliser.
 
-> **Petit matériel. Gros système.**
+⚠️ Vérifiez toujours que vous utilisez une version prévue pour **micro:bit V2**.
+
+---
+
+## Étape 4 : connecter l'OLED
+
+Si vous utilisez l'écran OLED :
+
+1. Connectez l'alimentation du module.
+2. Connectez **GND**.
+3. Connectez **SDA**.
+4. Connectez **SCL**.
+5. Vérifiez que les broches utilisées correspondent à la configuration de RFOS.
+6. Initialisez l'écran OLED dans le programme.
+
+Une fois correctement configuré, l'écran devient l'interface principale de RFOS.
+
+---
+
+## Étape 5 : connecter les périphériques
+
+Vous pouvez ensuite connecter les périphériques compatibles avec votre configuration :
+
+🕹️ **Joystick**
+
+Permet notamment de récupérer les valeurs X/Y et l'état du bouton.
+
+🔘 **Boutons**
+
+Peuvent être utilisés pour naviguer dans les menus et contrôler différentes fonctions.
+
+🎮 **Matrice de boutons**
+
+Permet d'ajouter plusieurs commandes avec un nombre réduit de broches.
+
+---
+
+# 🚀 5. Premier démarrage
+
+Une fois le programme transféré :
+
+1. Déconnectez puis reconnectez la micro:bit si nécessaire.
+2. Allumez votre installation.
+3. RFOS démarre.
+4. L'interface apparaît sur l'OLED si celui-ci est connecté.
+5. Utilisez les boutons ou périphériques configurés pour naviguer.
+6. Explorez les différentes scènes et paramètres.
+
+Si aucun OLED n'est connecté, certaines fonctions d'affichage peuvent évidemment ne pas être disponibles.
+
+---
+
+# ⚙️ 6. Configuration
+
+RFOS possède un système de paramètres permettant de modifier certains comportements du système.
+
+Selon la version utilisée, vous pourrez retrouver notamment des réglages comme :
+
+### 🚀 Speed
+
+Permet de choisir entre différents modes de fonctionnement.
+
+### 🔊 Sound
+
+Permet d'activer ou désactiver les fonctions sonores.
+
+D'autres paramètres et fonctionnalités peuvent être ajoutés au fil des mises à jour.
+
+---
+
+# 🧪 7. Tester les périphériques
+
+Une fois RFOS démarré, il est recommandé de tester chaque périphérique séparément.
+
+### 🕹️ Joystick
+
+Vérifiez :
+
+* Axe X
+* Axe Y
+* Bouton du joystick
+
+### 🔘 Boutons
+
+Vérifiez que chaque bouton correspond bien à l'action prévue.
+
+### 📟 OLED
+
+Vérifiez :
+
+* Initialisation
+* Affichage
+* Rafraîchissement
+* Navigation dans les menus
+
+Cette méthode permet de déterminer rapidement si un problème vient du logiciel ou du câblage.
+
+---
+
+# 🖥️ 8. RigFlowOS Desktop : futur du projet
+
+La branche Desktop est destinée à devenir une extension importante de RFOS.
+
+Cependant, **elle est encore en développement**.
+
+Il est donc normal que :
+
+* certaines fonctions ne soient pas disponibles ;
+* l'interface évolue ;
+* l'architecture change ;
+* certaines idées soient encore expérimentales ;
+* la version PC ne possède pas encore toutes les fonctionnalités de RFOS micro:bit.
+
+La version Desktop doit être considérée comme un **chantier de développement**, et non comme une version finale.
+
+---
+
+# 🧠 9. Philosophie de la V1.2
+
+La **NERD UPDATE** n'a pas pour objectif de transformer immédiatement RFOS en un énorme système.
+
+Elle pose plutôt les bases de son évolution.
+
+### Aujourd'hui
+
+**📟 micro:bit → RFOS fonctionnel**
+
+### Maintenant en développement
+
+**🖥️ PC → RigFlowOS Desktop**
+
+### À terme
+
+**📟 + 🖥️ → un véritable écosystème RigFlowOS**
+
+---
+
+# 🚧 Statut de la V1.2
+
+| Composant              | État                    |
+| ---------------------- | ----------------------- |
+| 📟 RFOS micro:bit      | 🟢 Fonctionnel          |
+| 📟 OLED                | 🟢 Supporté             |
+| 🕹️ Joystick            | 🟢 Supporté             |
+| 🔘 Boutons             | 🟢 Supportés            |
+| ⚙️ Paramètres          | 🟢 Fonctionnels         |
+| 🖥️ RigFlowOS Desktop   | 🟠 **En développement** |
+| 🧪 Nouvelles fonctions | 🟠 Expérimentales       |
+
+---
+
+## 🚀 RigFlowOS V1.2
+
+**RigFlowOS V1.2 « NERD UPDATE »** représente donc une nouvelle étape du projet.
+
+La micro:bit reste au centre de l'expérience actuelle, tandis que **RigFlowOS Desktop commence son développement en tant que future branche PC**.
+
+> **📟 Petit hardware. 🧠 Gros potentiel. 🖥️ Et maintenant, un Desktop en construction.**
