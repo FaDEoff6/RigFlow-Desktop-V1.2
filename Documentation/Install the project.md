@@ -31,7 +31,7 @@ Les périphériques supplémentaires ne sont pas nécessaires pour installer RFO
 
 Téléchargez le fichier :
 
-`microbit-RigFlow-Deck-V12.hex`
+`RigFlow-Deck-V12.hex`
 
 depuis la page principale du dépôt GitHub.
 
@@ -49,9 +49,9 @@ La micro:bit devrait apparaître comme un périphérique de stockage.
 
 Faites glisser le fichier :
 
-`microbit-RigFlow-Deck-V12.hex`
+`RigFlow-Deck-V12.hex`
 
-sur la micro:bit.
+sur la partition disque de la micro:bit.
 
 Le transfert démarre automatiquement.
 
@@ -82,21 +82,43 @@ Vous pouvez ensuite connecter les périphériques compatibles avec votre configu
 
 Le joystick permet notamment de récupérer :
 
-- Axe X
-- Axe Y
-- Bouton
+- Axe X (GPIO 0)
+- Axe Y (GPIO 1)
+- Bouton (GPIO 5)
 
-### 🔘 Boutons
-
-Les boutons peuvent être utilisés pour naviguer dans les différents menus et contrôler RFOS.
-
-### 🎮 Matrice de boutons
-
-Une matrice permet d'ajouter plusieurs commandes tout en utilisant un nombre limité de broches.
+D'autres périphériques a venir...
 
 ---
 
-# 6. Premier démarrage
+# 6. Installer les extensions
+
+Vous aurez probablement besoin d'extensions externes pour faire fonctionner le programme coté ordinateur.
+Pas de panique ! elles sont faciles a obtenir :
+
+Sur windows : 
+1. Ouvrez un Windows powershell exécutez cette commande : "Install-Module -Name BurntToast -Scope CurrentUser"
+2. Si l'on vous demande d'accepter d'installer des dépendances, acceptez tout.
+
+Sur MacOS :
+A venir...
+
+Sur Linux : 
+A venir...
+
+---
+
+# 7. Installaition du logiciel
+
+Cette partie est probablement la plus facile :
+
+Dans le fichier téléchargé depuis le dépot , vous trouverez un .vbs, lancez le et il se masquera dans la barre d'état automatiquement.
+Un système de notifications est installé pour remplacer une interface.
+
+Si voux préférez une interface , allez voir la fork 'Desktop' du dépot.
+
+---
+
+# 8. Premier démarrage
 
 Une fois RFOS installé :
 
